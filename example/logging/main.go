@@ -34,7 +34,7 @@ func (p *program) Start(s service.Service) error {
 	return nil
 }
 func (p *program) run() error {
-	logger.Infof("I'm running %v.", service.Platform())
+	logger.Infof("I'm demo running %v.", service.Platform())
 	ticker := time.NewTicker(2 * time.Second)
 	for {
 		select {
